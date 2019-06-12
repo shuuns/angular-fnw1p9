@@ -12,5 +12,7 @@ export class CartComponent {
 
   constructor(
     private cartService: CartService
-  ) { }
+  ) {
+    this.items = this.cartService.getItems();
+  }
 }
