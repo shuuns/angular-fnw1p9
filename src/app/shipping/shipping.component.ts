@@ -9,4 +9,9 @@ import { CartService } from '../cart.service';
 
 export class ShippingComponent {
   shippingCosts;
+
+  constructor(
+    private cartService: CartService
+  ) { }
+  
 }
