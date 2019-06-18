@@ -12,6 +12,8 @@ export class ShippingComponent {
 
   constructor(
     private cartService: CartService
-  ) { }
-  
+  ) {
+    this.shippingCosts = this.cartService.getShippingPrices();
+  }
+
 }
